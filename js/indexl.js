@@ -3,16 +3,15 @@
 
   Shape Shifter
   =============
-  A canvas experiment by Kenneth Cachia
-  http://www.kennethcachia.com
+  A canvas experiment by Long Văn
 
   Updated code
   ------------
-  https://github.com/kennethcachia/Shape-Shifter 
+  https://github.com/LongVan7320 
 
 */
 
-// '#countdown 3|hi|祝你|生日快乐|happy birthday||'
+// '#countdown 3|Đếm ngược||'
 var S = {
   init: function () {
     var m=0;
@@ -25,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('Hi brother|祝你|生日快乐|happy birthday|#countdown 3||');
+      S.UI.simulate('Chào em|Chúc em sinh nhật vui vẻ|Happy birthday|#countdown 3||');
     }
 
     S.Drawing.loop(function () {
